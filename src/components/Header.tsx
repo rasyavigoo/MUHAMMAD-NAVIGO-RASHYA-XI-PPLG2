@@ -27,7 +27,7 @@ const Header = () => {
         <div className="py-5 flex flex-col justify-between mx-auto items-center lg:w-[90%] md:flex-row ">
           <div className="flex items-center justify-between w-full px-4 md:w-auto">
             <div className="flex items-center gap-x-5">
-              <img src="/logo.png" alt="" className="h-10" />
+              <img src={`${BaseURL}/logo.png`} alt="" className="h-10" />
               <h4 className="max-w-32 text-center overflow-hidden text-md font-semibold">
                 Sanghiyang <br /> Gagak Hitam
               </h4>
