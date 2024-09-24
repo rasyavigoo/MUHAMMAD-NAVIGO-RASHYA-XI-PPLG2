@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+const BaseRouter = "/MUHAMMAD-NAVIGO-RASHYA-XI-PPLG2";
 const Header = () => {
   const [isMobileOpen, setMobileOpen] = useState(false);
 
@@ -28,7 +29,7 @@ const Header = () => {
             <div className="flex items-center gap-x-5">
               <img src="/logo.png" alt="" className="h-10" />
               <h4 className="max-w-32 text-center overflow-hidden text-md font-semibold">
-                Sanghiyang <br/> Gagak Hitam
+                Sanghiyang <br /> Gagak Hitam
               </h4>
             </div>
             {isMobileOpen && (
@@ -49,7 +50,7 @@ const Header = () => {
             <li>
               <Link
                 className="transition-all duration-300 hover:opacity-80"
-                to="/"
+                to={`${BaseRouter}`}
                 onClick={() => {
                   setMobileOpen(false);
                 }}
@@ -60,7 +61,7 @@ const Header = () => {
             <li>
               <Link
                 className="transition-all duration-300 hover:opacity-80"
-                to="/dokumentasi"
+                to={`${BaseRouter}/dokumentasi`}
                 onClick={() => {
                   setMobileOpen(false);
                 }}
@@ -71,7 +72,7 @@ const Header = () => {
             <li>
               <Link
                 className="transition-all duration-300 hover:opacity-80"
-                to="/jadwal-latihan"
+                to={`${BaseRouter}/jadwal-latihan`}
                 onClick={() => {
                   setMobileOpen(false);
                 }}
