@@ -2,8 +2,8 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { BaseURL } from "../Constants";
 
-const BaseRouter = "/MUHAMMAD-NAVIGO-RASHYA-XI-PPLG2";
 const Header = () => {
   const [isMobileOpen, setMobileOpen] = useState(false);
 
@@ -50,7 +50,7 @@ const Header = () => {
             <li>
               <Link
                 className="transition-all duration-300 hover:opacity-80"
-                to={`${BaseRouter}`}
+                to={`${BaseURL}`}
                 onClick={() => {
                   setMobileOpen(false);
                 }}
@@ -61,7 +61,7 @@ const Header = () => {
             <li>
               <Link
                 className="transition-all duration-300 hover:opacity-80"
-                to={`${BaseRouter}/dokumentasi`}
+                to={`${BaseURL}/dokumentasi`}
                 onClick={() => {
                   setMobileOpen(false);
                 }}
@@ -72,7 +72,7 @@ const Header = () => {
             <li>
               <Link
                 className="transition-all duration-300 hover:opacity-80"
-                to={`${BaseRouter}/jadwal-latihan`}
+                to={`${BaseURL}/jadwal-latihan`}
                 onClick={() => {
                   setMobileOpen(false);
                 }}

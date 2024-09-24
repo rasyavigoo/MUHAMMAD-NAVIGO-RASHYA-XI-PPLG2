@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import DefaultLayout from "../layouts/default";
+import { BaseURL } from "../Constants";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
               </h2>
               <div className="flex md:hidden w-[80%] mx-auto rounded-lg overflow-hidden hover:scale-105 transform transition-all duration-300 items-center">
                 <img
-                  src="/documentation/3.jpg"
+                  src={`${BaseURL}/documentation/3.jpg`}
                   className="w-full h-auto shadow-lg"
                   alt="Seorang pesilat sedang berlatih silat"
                 />
@@ -29,7 +30,7 @@ const Home = () => {
             </div>
             <div className="hidden md:flex w-[40%] rounded-lg overflow-hidden hover:scale-105 transform transition-all duration-300 items-center">
               <img
-                src="/documentation/3.jpg"
+                src={`${BaseURL}/documentation/3.jpg`}
                 className="w-full h-auto shadow-lg"
                 alt="Seorang pesilat sedang berlatih silat"
               />
@@ -40,7 +41,7 @@ const Home = () => {
           <div className="container mx-auto px-6 flex flex-col md:flex-row ">
             <div className="flex md:w-[40%] mb-6 md:mb-0 rounded-lg overflow-hidden md:mr-8 md:items-start md:justify-left justify-center items-center">
               <img
-                src="/documentation/2.jpg"
+                src={`${BaseURL}/documentation/2.jpg`}
                 className="h-5/6 w-auto shadow-lg"
                 alt="Ilustrasi seni bela diri silat"
               />

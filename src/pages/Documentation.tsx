@@ -1,3 +1,4 @@
+import { BaseURL } from "../Constants";
 import DefaultLayout from "../layouts/default";
 
 const imgLinks = [
@@ -22,7 +23,7 @@ const Documentation = () => {
           <h3 className="text-orange-400 my-3 text-3xl text-center">Dokumentasi</h3>
           <div className="flex flex-wrap w-[75%] py-10 mx-auto gap-3 justify-center">
             {imgLinks.map((m) => (
-              <img src={`/documentation/${m}`} className="h-96 border-[3.5px] border-yellow-500" />
+              <img src={`${BaseURL}/documentation/${m}`} className="h-96 border-[3.5px] border-yellow-500" />
             ))}
           </div>
         </section>
